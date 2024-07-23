@@ -9,8 +9,8 @@ load_dotenv()
 class AlphaVantageAPITest(TestCase):
     def test_api(self):
         api_key = os.getenv('ALPHA_VANTAGE_API_KEY')
-        symbol = 'TSCO.LON'
-        function = 'TIME_SERIES_DAILY'
+        symbol = 'IBM'
+        function = 'TIME_SERIES_WEEKLY'
         outputsize = 'full'
 
         url =f'https://www.alphavantage.co/query?function={function}&symbol={symbol}&outputsize={outputsize}&apikey={api_key}'
